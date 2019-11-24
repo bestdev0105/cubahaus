@@ -1,0 +1,138 @@
+.blank {
+  width: 1173px;
+  margin: 0 auto;
+  margin-top: 115px;
+  // height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 181px;
+
+  &__img {
+    width: 616px;
+    height: 577px;
+  }
+
+  &__body {
+    width: 400px;
+
+    &__title {
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 1.2;
+      text-align: left;
+      color: #07063f;
+    }
+
+    &__text {
+      font-family: Montserrat;
+      opacity: 0.7;
+      font-size: 23.5px;
+      font-weight: normal;
+      letter-spacing: 0.6;
+      line-height: 1.94;
+      text-align: left;
+      color: rgba(7, 6, 63, 0.87);
+      margin: 35px 0 50px 0;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    height: 50px;
+
+    &__LineButton {
+      padding: unset !important;
+      width: 135px;
+      height: 50px;
+      border-radius: 35px !important;
+      border: solid 2px #f2b143 !important;
+      font-size: 15.5px !important;
+      font-family: Montserrat !important;
+      margin-left: 20px !important;
+      color: #e7873c !important;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Montserrat;
+      font-weight: bold;
+    }
+
+    >a>span>div>div {
+      font-size: 15.5px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .blank {
+    width: 100%;
+    margin: 50px 0 150px 0;
+    padding-bottom: unset;
+
+    &__img {
+      width: 50%;
+      height: unset;
+      margin-bottom: 20px;
+    }
+
+    &__body {
+      width: 40%;
+      padding: 0 10px;
+
+      &__title {
+        font-size: 4.7vw;
+      }
+
+      &__text {
+        font-size: 2.7vw;
+      }
+    }
+
+    &__buttons {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blank {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0 150px 0;
+    padding-bottom: unset;
+
+    &__img {
+      width: 95%;
+      height: unset;
+      margin-bottom: 20px;
+    }
+
+    &__body {
+      width: 95%;
+      padding: 0 10px;
+
+      &__title {
+        font-size: 10vw;
+      }
+
+      &__text {
+        line-height: 1.66;
+        letter-spacing: 0.6;
+        font-size: 6vw;
+      }
+    }
+
+    &__buttons {
+      margin-top: 40px;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Host: https://cubahaus.ca/
+Sitemap: https://cubahaus.ca/sitemap.xml

@@ -1,0 +1,35 @@
+.icon {
+  &__container {
+    text-align: center;
+    display: inline-block;
+    margin: 5px 15px;
+    min-width: 70px;
+
+    @media screen and (max-width: 600px) {
+      width: 35%;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    span {
+      margin-top: 12px;
+      font-family: Montserrat;
+      font-size: 11.5px;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+      text-align: left;
+    }
+  }
+
+  &--active {
+    color: #4c5788;
+  }
+
+  &--disable {
+    fill: #d5d9ec;
+    color: #d5d9ec;
+  }
+}

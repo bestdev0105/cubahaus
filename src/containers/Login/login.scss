@@ -1,0 +1,245 @@
+.auth {
+  padding: 40px 0 120px 0;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    &__container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+}
+
+.invalidMsg {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10%;
+  color: #fbae17;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.forgotPasswordBtn {
+  cursor: pointer;
+}
+
+.signinForm {
+  width: 1000px;
+  height: 720px;
+  margin: 0 auto;
+  position: relative;
+  background-color: ghostwhite;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.signIn {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  // height: 680px;
+
+  &__close {
+    width: 50px;
+    height: 50px;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+  }
+
+  &__background {
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__background1 {
+    display: none;
+  }
+
+  &__buttons {
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-right: 1px solid #f5f5f5;
+
+    &__title {
+      font-family: Montserrat;
+      font-size: 29px;
+      font-style: normal;
+      font-weight: bold;
+      letter-spacing: 0.7px;
+      color: #4c5788;
+      margin-bottom: 50px;
+      margin-top: 0px;
+    }
+
+    &__button span {
+      line-height: normal !important;
+      justify-content: flex-start;
+      text-transform: none;
+    }
+
+    &__button span img {
+      margin-left: 30px;
+      margin-right: 5px;
+    }
+
+    &__button {
+      width: 382px;
+      height: 61px;
+      padding: 0 !important;
+      padding-left: 32px;
+      margin-right: 50px;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 30px !important;
+      cursor: pointer;
+      margin-bottom: 25px !important;
+
+      &__icon {
+        width: 27px;
+        height: 27px;
+        fill: #ffffff;
+      }
+
+      &__text {
+        margin-left: 11px;
+        font-family: Montserrat;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        color: #ffffff;
+        margin: 0px;
+      }
+    }
+  }
+
+  &__form {
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__submit {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &__loginInput {
+      margin-bottom: 26px !important;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  &__body {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .signinForm {
+    width: 90%;
+    height: 720px;
+    margin: 0 auto;
+    position: relative;
+    background-color: ghostwhite;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signIn {
+    width: 100%;
+    height: unset;
+
+    &__form {
+      padding-bottom: unset;
+    }
+
+    &__buttons {
+      > button {
+        width: 90%;
+      }
+    }
+
+    &__background {
+      position: unset;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .signinForm {
+    width: 90%;
+    height: 830px;
+    margin: 0 auto;
+    position: relative;
+    background-color: ghostwhite;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signIn {
+    display: block;
+    height: unset;
+    padding: unset !important;
+    width: 100%;
+
+    &__buttons {
+      width: 100%;
+      border-right: unset;
+      padding-bottom: unset;
+
+      &__title {
+        font-size: 5.5vw;
+        margin-bottom: 25px;
+      }
+    }
+
+    &__form {
+      width: 100%;
+      padding-bottom: 20px;
+      padding-top: 20px;
+
+      &__submit {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
+
+    &__background {
+      display: none;
+    }
+
+    &__background1 {
+      display: block;
+      position: inherit;
+      width: 40%;
+      margin: -20px 0 20px 20%;
+    }
+  }
+}

@@ -1,0 +1,182 @@
+.finalPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+
+  &__title {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.52;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #4c5788;
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    width: 450px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    // line-height: 1.33;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #596390;
+  }
+
+  &__cardGrid {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 1000px;
+    height: 405px;
+    border-radius: 20px;
+    box-shadow: 0 0 27px 8.1px rgba(210, 215, 255, 0.21);
+    background-color: #ffffff;
+  }
+
+  &__contactCard {
+    height: 634px;
+    width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 0 27px 8.1px rgba(210, 215, 255, 0.21);
+    background-color: #ffffff;
+    padding-top: 60px;
+    flex-direction: column;
+    text-align: center;
+    // justify-content: center;
+    // display: flex;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 24.5px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #4c5788;
+    margin-bottom: 33px;
+  }
+
+  &__input {
+    border: solid 1px #d3d4e2;
+    padding: 20px;
+    width: 755px;
+    height: 138px;
+  }
+
+  &__timeText {
+    font-family: Montserrat;
+    font-size: 24.5px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #4c5788;
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+
+  &__timeSelect {
+    padding-right: 110px;
+    padding-left: 110px;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+  }
+
+  &__selectTitleText {
+    width: 100px;
+    padding-right: 30px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #4c5788;
+    margin-bottom: 40px;
+  }
+}
+
+.dropdown {
+  width: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1px solid #d2d4e4;
+  align-items: center;
+
+  &__text {
+    margin-left: 3px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #1e2bff;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 8px;
+    fill: #b7bcce;
+  }
+}
+
+.itemlist {
+  width: 100px;
+  height: 132px;
+  margin-top: 7px;
+  border-radius: 10px;
+  box-shadow: 0 0 35.4px 10.6px rgba(210, 215, 255, 0.24);
+  background-color: #ffffff;
+}
+
+.root {
+  float: left;
+  // height: 300px;
+  width: 65px;
+  background: #ffffff;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+  max-height: 130px;
+  width: 100%;
+  max-width: 160px;
+}
+
+//.force-overflow {}
+
+.root::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+
+.root::-webkit-scrollbar {
+  width: 15px;
+  // background-color: #f5f5f5;
+}
+
+.root::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #1620ff;
+}
+
+.listText {
+  font-family: Montserrat;
+  font-size: 11.5px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+
+.sendBtn {
+  padding-top: 150px;
+}

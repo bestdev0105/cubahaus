@@ -1,0 +1,121 @@
+.dashboard {
+  margin-top: 50px;
+
+  .description {
+    text-align: center;
+  }
+
+  .room {
+    pointer-events: none;
+  }
+
+  .red {
+    color: red;
+  }
+}
+
+.center {
+  transform: scale(1.08);
+  transition: all 0.3s ease;
+}
+
+.checkoutPreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+
+  &__card {
+    text-align: center;
+  }
+
+  &__title {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.52;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #4c5788;
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #596390;
+  }
+
+  &__cardGrid {
+    width: 100%;
+    height: 500px;
+    justify-content: space-between;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.preview2 {
+  width: 100%;
+  height: 816px;
+  border-radius: 10px;
+  box-shadow: 0 0 47.7px 14.3px rgba(210, 215, 255, 0.43);
+  background: #ffffff;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.dialog {
+  width: 569px !important;
+  height: 337px !important;
+  border-radius: 0 0 27px 8.1px rgba(210, 215, 255, 0.21);
+  background-color: #ffffff;
+}
+
+.dialog__text {
+  font-family: Montserrat;
+  font-size: 31px !important;
+  letter-spacing: 1.6px;
+  font-weight: bold;
+  text-align: center;
+  color: #4c5788 !important;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.dialog__Button {
+  width: 135px;
+  height: 50px;
+  border-radius: 31.5px !important;
+  background-image: linear-gradient(136deg, #f2b143 1%, #e6813b 99%);
+  font-size: 23px !important;
+  font-family: Montserrat !important;
+  margin-left: 10px;
+  color: #ffffff !important;
+}
+
+.dialog__LineButton {
+  width: 135px;
+  height: 50px;
+  border-radius: 31.5px !important;
+  border: solid 2px #f2b143 !important;
+  font-size: 23px !important;
+  font-family: Montserrat !important;
+  margin-right: 20px !important;
+  color: #e7873c !important;
+}
+
+.dialog__actions {
+  margin-bottom: 50px !important;
+}

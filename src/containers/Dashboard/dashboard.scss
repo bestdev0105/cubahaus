@@ -1,0 +1,155 @@
+.dashboard {
+  padding: 0 20px;
+  padding-bottom: 50px;
+
+  .text {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
+  .narrow {
+    letter-spacing: 0.4px;
+    color: #737ba1;
+  }
+
+  .wide {
+    letter-spacing: 0.8px;
+    color: #596390;
+    text-align: left;
+    line-height: 2;
+    margin-bottom: 41px;
+  }
+
+  .verificationStatus {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .timer {
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+  }
+
+  .statusText {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.5px;
+    color: #737ba1;
+  }
+
+  .more {
+    display: flex;
+    align-items: center;
+    margin-bottom: 113px;
+  }
+
+  .moreText {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.5px;
+    color: #737ba1;
+    margin-right: 12px;
+  }
+
+  .arrow {
+    width: 17px;
+    height: 14px;
+  }
+
+  .welcomeText {
+    font-size: 36.5px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.9px;
+    color: #4c5788;
+  }
+
+  .description {
+    width: 449px;
+  }
+
+  .rocketImage {
+    width: 47px;
+    height: 47px;
+    filter: invert(1);
+    margin-right: 7px;
+  }
+
+  .applicationButtonText {
+    font-size: 23px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+  }
+}
+
+.startBtn {
+  height: 73px;
+  width: 347px;
+  background-image: linear-gradient(136deg, #f2b143 1%, #e6813b 99%);
+  border-radius: 36.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .description {
+    width: unset !important;
+  }
+
+  .applicationButtonText {
+    font-size: 4vw !important;
+  }
+
+  .startBtn {
+    width: unset;
+  }
+
+  .background1 {
+    display: none;
+  }
+
+  .loggedinUsername {
+    > span {
+      display: none;
+    }
+  }
+
+  .mobilebackground {
+    display: block !important;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+
+    &__background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0px;
+      z-index: -1;
+    }
+
+    &__img {
+      z-index: 1;
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+}
+
+.mobilebackground {
+  display: none;
+}

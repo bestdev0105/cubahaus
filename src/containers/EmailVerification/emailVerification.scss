@@ -1,0 +1,31 @@
+.emailVerification {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  // background-color: blue;
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #4c5788;
+  }
+}
+
+.emailVerification-title {
+  margin: 100px 0px 30px;
+}
+
+// .bottomBtn {
+// 	position: fixed;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	padding: 30px 0px;
+// 	text-align: center;
+// 	font-size: 24px;
+// 	border: 0px;
+// }

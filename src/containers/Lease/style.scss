@@ -1,0 +1,38 @@
+.lease {
+  &__description {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 2.53;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #e7863c;
+  }
+  .stepperIconWrapper {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.completed {
+      background-image: linear-gradient(27deg, #5980ff 1%, #0000ff 99%);
+      box-shadow: 0 0 78.1px 5.9px rgba(37, 60, 158, 0.24);
+    }
+
+    &.incompleted {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #d2d4e2;
+    }
+
+    .tick {
+      width: 17px;
+      height: 13px;
+      filter: invert(1);
+    }
+  }
+}

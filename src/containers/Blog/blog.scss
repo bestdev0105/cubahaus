@@ -1,0 +1,158 @@
+.blog {
+  width: 1173px;
+  margin: 0 auto;
+  margin-top: 115px;
+
+  &__title {
+    font-family: Montserrat;
+    font-size: 33.5px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1.2px;
+    color: #4c5788;
+    // margin: 0 auto;
+  }
+
+  h2 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: blod;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.97;
+    text-align: left;
+    letter-spacing: 0.5px;
+    color: rgba(39, 52, 110, 0.73);
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 18.5px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.97;
+    text-align: left;
+    letter-spacing: 0.5px;
+    color: rgba(39, 52, 110, 0.73);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  li {
+    font-family: Montserrat;
+    font-size: 18.5px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.97;
+    text-align: left;
+    letter-spacing: 0.5px;
+    color: rgba(39, 52, 110, 0.73);
+  }
+
+  &__body {
+    &__img {
+      margin-top: -100px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 180px;
+    justify-content: center;
+    margin-top: 50px;
+
+    &__LineButton {
+      width: 135px;
+      height: 50px;
+      border-radius: 35px !important;
+      border: solid 2px #f2b143 !important;
+      font-size: 18px !important;
+      font-family: Montserrat !important;
+      margin-right: 20px !important;
+      color: #e7873c !important;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Montserrat;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .blog {
+    width: 95%;
+    padding: 15px;
+    margin-top: 50px;
+
+    &__body {
+      &__title {
+        font-size: 5vw;
+      }
+
+      h2 {
+        margin: 0 auto;
+        font-size: 5.2vw;
+      }
+
+      p {
+        font-size: 2.5vw;
+      }
+
+      li {
+        font-size: 2.5vw;
+      }
+
+      &__img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog {
+    width: 93%;
+    padding: 15px;
+    margin-top: 50px;
+
+    &__body {
+      h2 {
+        margin: 0 auto !important;
+        font-size: 5.2vw !important;
+      }
+
+      p {
+        font-size: 4vw;
+      }
+
+      li {
+        font-size: 4vw;
+      }
+
+      &__title {
+        font-size: 8vw;
+      }
+
+      &__img {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    &__buttons {
+      padding-bottom: 130px;
+    }
+  }
+}

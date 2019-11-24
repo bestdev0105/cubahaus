@@ -1,0 +1,254 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.community__detail {
+  margin-top: 50px;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+
+  &__manager {
+    width: 100%;
+    border-radius: 10px;
+    padding: 45px 35px;
+    box-shadow: 12.8px 2.3px 40.2px 8.8px rgba(24, 63, 255, 0.17);
+    background-color: #202dff;
+    position: relative;
+
+    h2 {
+      margin: 0;
+      font-family: Montserrat;
+      font-size: 23.5px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.94;
+      letter-spacing: 1.2px;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    span {
+      width: 381px;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.63;
+      letter-spacing: 0.8px;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    &__bg1 {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 218px;
+      opacity: 0.27;
+      background-image: linear-gradient(112deg, #5980ff 33%, #0000ff 99%);
+    }
+  }
+
+  &__slider {
+    img {
+      width: 100%;
+      height: 287px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 20.8px 2px rgba(210, 215, 255, 0.22);
+    }
+
+    .icon {
+      fill: #f2b143;
+      color: #f2b143;
+    }
+  }
+}
+
+// .room {
+// height: 500px;
+// align-items: center;
+// display: grid;
+// }
+
+.roomCard {
+  display: flex !important;
+  justify-content: center;
+}
+
+.map {
+  position: relative;
+
+  &--marker {
+    background-image: url("../../assets/green-home-icon.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  &__distance {
+    position: absolute;
+    top: -100px;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 308px;
+    height: 308px;
+    border: dashed 2px rgba(37, 60, 158, 0.24);
+    border-radius: 50%;
+    z-index: 1;
+
+    &__container {
+      width: 260px;
+      height: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 0 78.1px 5.9px rgba(37, 60, 158, 0.24);
+      background-image: linear-gradient(27deg, #5980ff 1%, #0000ff 99%);
+      border-radius: 50%;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: left;
+      color: #ffffff;
+
+      div {
+        margin-top: 13px;
+        display: flex;
+        align-items: center;
+      }
+
+      .icon {
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin-right: 15px;
+        fill: #ffffff;
+        color: #ffffff;
+        border: solid 1px #ffffff;
+        border-radius: 25px;
+        padding: 10px;
+      }
+
+      span {
+        vertical-align: middle;
+        margin: 0;
+
+        .bold {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.slick-dots {
+  bottom: -30px;
+
+  li button::before {
+    width: 8px;
+    height: 8px;
+    border: #e6813b 1px solid;
+    border-radius: 50%;
+    opacity: 1;
+    background: none;
+    color: transparent;
+  }
+
+  li.slick-active button::before {
+    background-image: linear-gradient(136deg, #f2b143 1%, #e6813b 99%);
+    color: transparent;
+    opacity: 1;
+  }
+}
+
+.mapTitleText {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: #4c5788;
+}
+
+.room__mobile {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  .community__detail {
+    &__manager {
+      width: unset;
+
+      @media screen and (max-width: 500px) {
+        >span {
+          font-size: 3.5vw;
+        }
+      }
+    }
+
+    &__body {
+      padding: 30px !important;
+      margin-top: -70px !important;
+    }
+  }
+
+  .mapTitleText {
+    margin-bottom: 150px;
+  }
+
+  .room {
+    display: none;
+  }
+
+  .room__mobile {
+    display: block;
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+
+    &__distance {
+      left: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  // .slick-slide {
+  // display: none !important;
+  // min-width: 280px;
+  // }
+
+  .slick-current {
+    .roomCard {
+      >div {
+        z-index: 1;
+
+        >div {
+          width: 280px;
+
+          >div:nth-child(3) {
+            >button:nth-child(2) {
+              margin-left: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

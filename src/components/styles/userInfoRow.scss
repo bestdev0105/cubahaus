@@ -1,0 +1,33 @@
+.userInfoRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.userInfoRow-label {
+		font-size: 20px;
+	}
+	.userInfoRow-dataDisplay {
+		display: flex;
+		align-items: center;
+		.userInfoRow-data {
+
+		}
+
+	}
+	.userInfoRow-dataEdit {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.userInfoRow-btn {
+	opacity: 0.2;
+	margin: 0px 10px;
+	padding: 5px;
+	color: whitesmoke;
+	border-radius: 5px;
+	transition: all 0.3s;
+	&:hover {
+		cursor: pointer;
+		opacity: 1;
+	}
+}
